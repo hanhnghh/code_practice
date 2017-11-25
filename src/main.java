@@ -1,6 +1,7 @@
 public class main {
 
     public static void main(String args[]){
+        /*
         //Job Sequencing start
         Job[] jobs = new Job[5];
         jobs[0] = new Job('a', 2, 100);
@@ -13,5 +14,24 @@ public class main {
         jobSequencing.orderJob();
         jobSequencing.printJob();
         //Job Sequencing end
+        */
+        /*
+        String[] crypt =  {"SEND",
+                "MORE",
+                "MONEY"};
+        char[][] solution =  {{'O','0'},
+                                {'M','1'},
+                                {'Y','2'},
+                                {'E','5'},
+                                {'N','6'},
+                                {'D','7'},
+                                {'R','8'},
+                                {'S','9'}};
+
+        IsCryptSolution cryptSolution = new IsCryptSolution(crypt, solution);
+        System.out.println("result: " + cryptSolution.isCryptSolution());
+        */
+
+
     }
 }

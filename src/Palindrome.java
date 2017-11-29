@@ -33,6 +33,8 @@ public class Palindrome {
 
             secondHalf = slowFwd;
             prevSlow.next = null;
+            //root in reverseSecondHalf just point to secondHalf, so reverseSecondHalf function just affect for root only, not secondHalf. In C++ we
+            //can use pass pointer/reference but in Java, we can use this way.
             secondHalf = reverseSecondHalf(secondHalf);
             res = compare2Parts(head, secondHalf);
         }
@@ -62,7 +64,7 @@ public class Palindrome {
         ListNode<Integer> test2 = second, temp2 = second;
 
         while(temp1 != null && temp2 != null){
-            //System.out.println(temp1.value +  " : " + temp2.value);
+            //Uses equals instead of '==' because '==' is just for (-127, 126) in Java.
             if(temp1.value.equals(temp2.value)){
                 temp1 = temp1.next;
                 temp2 = temp2.next;

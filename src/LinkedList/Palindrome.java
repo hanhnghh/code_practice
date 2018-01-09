@@ -1,11 +1,13 @@
+package LinkedList;
+
 public class Palindrome {
     // Definition for singly-linked list:
-// class ListNode<T> {
-//   ListNode(T x) {
+// class LinkedList.ListNode<T> {
+//   LinkedList.ListNode(T x) {
 //     value = x;
 //   }
 //   T value;
-//   ListNode<T> next;
+//   LinkedList.ListNode<T> next;
 // }
 //
     boolean isListPalindrome(ListNode<Integer> head) {

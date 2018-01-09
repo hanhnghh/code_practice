@@ -1,6 +1,8 @@
+package LinkedList;
+
 public class AddTwoHugeNumber {
     //Straight way: Doesn't work with very huge number
-    /*ListNode<Integer> addTwoHugeNumbers(ListNode<Integer> a, ListNode<Integer> b) {
+    /*LinkedList.ListNode<Integer> addTwoHugeNumbers(LinkedList.ListNode<Integer> a, LinkedList.ListNode<Integer> b) {
         long aNumber = convertListToNumber(a);
         long bNumber = convertListToNumber(b);
 
@@ -8,13 +10,13 @@ public class AddTwoHugeNumber {
         System.out.println(aNumber);
         System.out.println(bNumber);
         System.out.println(sum);
-        ListNode<Integer> sumList = convertNumberToList(sum);
+        LinkedList.ListNode<Integer> sumList = convertNumberToList(sum);
 
         return sumList;
     }
 
-    long convertListToNumber(ListNode<Integer> root){
-        ListNode<Integer> temp = root;
+    long convertListToNumber(LinkedList.ListNode<Integer> root){
+        LinkedList.ListNode<Integer> temp = root;
         long aNumber = 0;
         if(temp != null){
             aNumber += temp.value;
@@ -29,16 +31,16 @@ public class AddTwoHugeNumber {
         return aNumber;
     }
 
-    ListNode<Integer> convertNumberToList(long num){
+    LinkedList.ListNode<Integer> convertNumberToList(long num){
         long a = num;
         long num1;
         int res;
-        ListNode<Integer>next = null;
+        LinkedList.ListNode<Integer>next = null;
 
         while(true){
             num1 = a % 10000;
             res = (int)num1;
-            ListNode<Integer> current = new ListNode<Integer>(res);
+            LinkedList.ListNode<Integer> current = new LinkedList.ListNode<Integer>(res);
             current.next = next;
             next = current;
             a = a / 10000;

@@ -1,3 +1,5 @@
+package Array;
+
 public class FirstDuplicate {
 
     int[] arr;

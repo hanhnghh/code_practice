@@ -1,3 +1,5 @@
+package LinkedList;
+
 public class MergeTwoLinkedList {
 
     ListNode<Integer> mergeTwoLinkedLists(ListNode<Integer> l1, ListNode<Integer> l2) {

@@ -1,3 +1,5 @@
+package LinkedList;
+
 public class RemoveKFromList {
 
     ListNode<Integer> removeKFromList(ListNode<Integer> l, int k) {

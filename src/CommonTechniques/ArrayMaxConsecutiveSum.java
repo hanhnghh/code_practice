@@ -5,7 +5,19 @@ import java.util.Collections;
 import java.util.List;
 
 public class ArrayMaxConsecutiveSum {
-    public static int arrayMaxConsecutiveSum2(int[] inputArray) {
+
+    int arrayMaxConsecutiveSum2(int[] inputArray) {
+        if(inputArray.length==0) return 0;
+        int[] sum = new int[inputArray.length];
+        sum[0]=inputArray[0];
+        int max =Integer.MIN_VALUE;
+        for(int i=1; i< inputArray.length; i++){
+            sum[i] =Math.max(sum[i-1]+inputArray[i],inputArray[i]);
+            max = Math.max(sum[i],max);
+        }
+        return max;
+    }
+    /*public static int arrayMaxConsecutiveSum2(int[] inputArray) {
         int[] maxSum = new int[inputArray.length];
         boolean[] contains = new boolean[inputArray.length];
         int[] maxTemp = new int[inputArray.length];
@@ -52,6 +64,6 @@ public class ArrayMaxConsecutiveSum {
             temp.add(maxSum[i]);
 
         return Collections.max(temp);
-    }
+    }*/
 
 }

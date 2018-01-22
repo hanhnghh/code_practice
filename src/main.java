@@ -2,6 +2,9 @@ import HeapStackQueue.CountClouds;
 import HeapStackQueue.DecodeString;
 import HeapStackQueue.MinOfStack;
 import HeapStackQueue.NextLarger;
+import Sorting.BubbleSort;
+import Sorting.HigherVersion2;
+import Sorting.SortByString;
 import Tree.RestoreBinaryTree;
 import Tree.HasPathWithGivenSum;
 import Tree.Tree;
@@ -61,7 +64,7 @@ public class main {
                 {'0', '1', '0'}};
         System.out.println(CountClouds.countClouds(map));*/
 
-        int[] inorder = {-93277, 62688, -4487, -100000, 43284, 64724, 70666, -63901,
+        /*int[] inorder = {-93277, 62688, -4487, -100000, 43284, 64724, 70666, -63901,
                 -4545, 31785, -30391, -90506, -67320, 31470, -50294, 100000, -77706,
                 -47872, -700, 31330, -41014, 63472, 96532, -58604, 24487, -59632,
                 40548, 88721, -49562, 81334, -74950, -43186, -32522, -67455, -62444,
@@ -96,7 +99,14 @@ public class main {
         int[] inorder2 = {3, 2, 4, 1};
         int[] preorder2 = {1, 2, 3, 4};
         Tree t = RestoreBinaryTree.restoreBinaryTree(inorder2, preorder2);
-        System.out.println("");
+        System.out.println("");*/
+
+        /*int[] a = {5, 4, 1, 2};
+        BubbleSort.bubbleSort(a);*/
+        //System.out.println(HigherVersion2.higherVersion2("1.0.5", "1.00.6"));
+        System.out.println(SortByString.sortByString("weather", "therapyw"));
 
     }
+
+
 }

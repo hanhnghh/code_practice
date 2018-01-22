@@ -41,7 +41,7 @@ public class MinOfStack {
     }
 
     /*
-    * nt[] minimumOnStack(String[] operations) {
+    * int[] minimumOnStack(String[] operations) {
 
     Stack<Integer> elems = new Stack<Integer>();
     Stack<Integer> mins = new Stack<Integer>();

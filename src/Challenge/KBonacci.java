@@ -27,7 +27,7 @@ public class KBonacci {
         return String.valueOf(kArray[n]);
     }*/
 
-    String kbonacci(int k, int n) {
+    public static String kbonacci(int k, int n) {
         if (n < k) {
             return "1";
         }

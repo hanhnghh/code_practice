@@ -1,3 +1,5 @@
+import Arcade.CommonCharacterCount;
+import Challenge.KBonacci;
 import HeapStackQueue.CountClouds;
 import HeapStackQueue.DecodeString;
 import HeapStackQueue.MinOfStack;
@@ -9,7 +11,7 @@ import Tree.RestoreBinaryTree;
 import Tree.HasPathWithGivenSum;
 import Tree.Tree;
 
-public class main {
+public class Main {
 
     public static void main(String args[]){
         /*
@@ -104,7 +106,13 @@ public class main {
         /*int[] a = {5, 4, 1, 2};
         BubbleSort.bubbleSort(a);*/
         //System.out.println(HigherVersion2.higherVersion2("1.0.5", "1.00.6"));
-        System.out.println(SortByString.sortByString("weather", "therapyw"));
+        /*System.out.println(SortByString.sortByString("weather", "therapyw"));*/
+
+        //System.out.println(KBonacci.kbonacci(8, 100000));
+
+        String s1 = "zzzz";
+        String s2 = "zzzzzzz";
+        System.out.println(CommonCharacterCount.commonCharacterCount(s1, s2));
 
     }
 

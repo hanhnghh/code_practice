@@ -1,8 +1,6 @@
 package Arcade;
 
 import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class CommonCharacterCount {
     public static int commonCharacterCount(String s1, String s2) {

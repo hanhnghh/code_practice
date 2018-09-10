@@ -1,4 +1,6 @@
 import Arcade.CommonCharacterCount;
+import Arcade.IsLucky;
+import Arcade.SortByHeight;
 import Challenge.KBonacci;
 import HeapStackQueue.CountClouds;
 import HeapStackQueue.DecodeString;
@@ -110,9 +112,15 @@ public class Main {
 
         //System.out.println(KBonacci.kbonacci(8, 100000));
 
-        String s1 = "zzzz";
+        /*String s1 = "zzzz";
         String s2 = "zzzzzzz";
-        System.out.println(CommonCharacterCount.commonCharacterCount(s1, s2));
+        System.out.println(CommonCharacterCount.commonCharacterCount(s1, s2));*/
+
+        /*int n = 123321;
+        System.out.println(IsLucky.isLucky(n));*/
+
+        int[] a = {-1, 150, 190, 170, -1, -1, 160, 180};
+        SortByHeight.sortByHeight(a);
 
     }
 

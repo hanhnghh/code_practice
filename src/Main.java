@@ -127,10 +127,10 @@ public class Main {
         /*int[] a = {-1, 150, 190, 170, -1, -1, 160, 180};
         SortByHeight.sortByHeight(a);*/
 
-        /*String s = "a(bc)de";
-        ReverseParenthese.reverseParentheses(s);*/
+        String s = "a(bc)de";
+        ReverseParenthese.reverseParentheses(s);
 
-        int[] array = {1, 2, 3, 4, 5, 6};
+        /*int[] array = {1, 2, 3, 4, 5, 6};
         ArrayList<Integer> list = new ArrayList<>();
         for(int i = 0; i < array.length; i++){
             list.add(array[i]);
@@ -141,7 +141,7 @@ public class Main {
             average = (average + it.next());
         }
         average /= 10;
-        System.out.println(average);
+        System.out.println(average);*/
     }
 
 

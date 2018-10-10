@@ -10,21 +10,33 @@ public class ReverseParenthese {
         String[] list = s.split("");
         int n = list.length;
 
-        String[] result = new String[n];
-
-        for(int i = 0, j = n - 1; i < n/2 && j > n/2; i++, j--){
+        String[] resultArray = new String[n];
+        String result = "";
+        for(int i = 0, j = n - 1; i < n && j >= 0; i++, j--){
             if(list[i].equals("(") && list[j].equals(")")){
+                level+= 1;
+                String temp = "";
+                for(int k = i; k <= j; k++){
+                    temp += list[k];
+                }
 
+                if(level % 2 == 0){
+                    result += reverseParentheses(temp);
+                } else {
+                    String tempReverse = reverseArray(temp.split(""));
+                    result += reverseParentheses(tempReverse);
+                }
             } else {
-                result[i] = list[i];
-                result[j] = list[j];
+                resultArray[i] = list[i];
+                resultArray[j] = list[j];
             }
         }
         reverseArray(s.split(""));
-        return s;
+        return result;
     }
 
-    private static void reverseArray(String[] a){
+    private static String reverseArray(String[] a){
+        String s = "";
         int n = a.length;
         for(int i = 0; i < a.length / 2 - 1; i++){
             String temp = a[i];
@@ -32,7 +44,9 @@ public class ReverseParenthese {
             a[n-1-i] = temp;
         }
         for(int i = 0; i < a.length; i++) {
-            System.out.print(a[i]);
+            s += a[i];
         }
+
+        return s;
     }
 }

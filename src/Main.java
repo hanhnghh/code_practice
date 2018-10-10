@@ -1,5 +1,24 @@
 import Line.PhoneBill;
 import Line.Taks2;
+import Arcade.CommonCharacterCount;
+import Arcade.IsLucky;
+import Arcade.ReverseParenthese;
+import Arcade.SortByHeight;
+import Challenge.KBonacci;
+import HeapStackQueue.CountClouds;
+import HeapStackQueue.DecodeString;
+import HeapStackQueue.MinOfStack;
+import HeapStackQueue.NextLarger;
+import Sorting.BubbleSort;
+import Sorting.HigherVersion2;
+import Sorting.SortByString;
+import Tree.RestoreBinaryTree;
+import Tree.HasPathWithGivenSum;
+import Tree.Tree;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
 
 public class Main {
 
@@ -104,13 +123,33 @@ public class Main {
         String s2 = "zzzzzzz";
         System.out.println(CommonCharacterCount.commonCharacterCount(s1, s2));*/
 
-        String s = "\"00:01:07,400-234-090\n" +
+        /*String s = "\"00:01:07,400-234-090\n" +
                 "   00:05:01,701-080-080\n" +
                 "   00:05:00,400-234-090\"";
-        PhoneBill.solution(s);
+        PhoneBill.solution(s);*/
 
         /*System.out.print(Taks2.solution(20));*/
+        /*int n = 123321;
+        System.out.println(IsLucky.isLucky(n));*/
 
+        /*int[] a = {-1, 150, 190, 170, -1, -1, 160, 180};
+        SortByHeight.sortByHeight(a);*/
+
+        String s = "a(bc)de";
+        ReverseParenthese.reverseParentheses(s);
+
+        /*int[] array = {1, 2, 3, 4, 5, 6};
+        ArrayList<Integer> list = new ArrayList<>();
+        for(int i = 0; i < array.length; i++){
+            list.add(array[i]);
+        }
+        float average = 0;
+
+        for(Iterator<Integer> it = list.iterator(); it.hasNext();){
+            average = (average + it.next());
+        }
+        average /= 10;
+        System.out.println(average);*/
     }
 
 

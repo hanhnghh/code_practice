@@ -1,5 +1,6 @@
 import Arcade.CommonCharacterCount;
 import Arcade.IsLucky;
+import Arcade.ReverseParenthese;
 import Arcade.SortByHeight;
 import Challenge.KBonacci;
 import HeapStackQueue.CountClouds;
@@ -12,6 +13,10 @@ import Sorting.SortByString;
 import Tree.RestoreBinaryTree;
 import Tree.HasPathWithGivenSum;
 import Tree.Tree;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
 
 public class Main {
 
@@ -119,9 +124,24 @@ public class Main {
         /*int n = 123321;
         System.out.println(IsLucky.isLucky(n));*/
 
-        int[] a = {-1, 150, 190, 170, -1, -1, 160, 180};
-        SortByHeight.sortByHeight(a);
+        /*int[] a = {-1, 150, 190, 170, -1, -1, 160, 180};
+        SortByHeight.sortByHeight(a);*/
 
+        /*String s = "a(bc)de";
+        ReverseParenthese.reverseParentheses(s);*/
+
+        int[] array = {1, 2, 3, 4, 5, 6};
+        ArrayList<Integer> list = new ArrayList<>();
+        for(int i = 0; i < array.length; i++){
+            list.add(array[i]);
+        }
+        float average = 0;
+
+        for(Iterator<Integer> it = list.iterator(); it.hasNext();){
+            average = (average + it.next());
+        }
+        average /= 10;
+        System.out.println(average);
     }
 
 

@@ -1,15 +1,5 @@
-import Arcade.CommonCharacterCount;
-import Challenge.KBonacci;
-import HeapStackQueue.CountClouds;
-import HeapStackQueue.DecodeString;
-import HeapStackQueue.MinOfStack;
-import HeapStackQueue.NextLarger;
-import Sorting.BubbleSort;
-import Sorting.HigherVersion2;
-import Sorting.SortByString;
-import Tree.RestoreBinaryTree;
-import Tree.HasPathWithGivenSum;
-import Tree.Tree;
+import Line.PhoneBill;
+import Line.Taks2;
 
 public class Main {
 
@@ -110,9 +100,16 @@ public class Main {
 
         //System.out.println(KBonacci.kbonacci(8, 100000));
 
-        String s1 = "zzzz";
+        /*String s1 = "zzzz";
         String s2 = "zzzzzzz";
-        System.out.println(CommonCharacterCount.commonCharacterCount(s1, s2));
+        System.out.println(CommonCharacterCount.commonCharacterCount(s1, s2));*/
+
+        String s = "\"00:01:07,400-234-090\n" +
+                "   00:05:01,701-080-080\n" +
+                "   00:05:00,400-234-090\"";
+        PhoneBill.solution(s);
+
+        /*System.out.print(Taks2.solution(20));*/
 
     }
 

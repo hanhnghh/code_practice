@@ -1,9 +1,6 @@
+import Arcade.*;
 import Line.PhoneBill;
 import Line.Taks2;
-import Arcade.CommonCharacterCount;
-import Arcade.IsLucky;
-import Arcade.ReverseParenthese;
-import Arcade.SortByHeight;
 import Challenge.KBonacci;
 import HeapStackQueue.CountClouds;
 import HeapStackQueue.DecodeString;
@@ -135,8 +132,8 @@ public class Main {
         /*int[] a = {-1, 150, 190, 170, -1, -1, 160, 180};
         SortByHeight.sortByHeight(a);*/
 
-        String s = "a(bc)de";
-        System.out.println(ReverseParenthese.reverseParentheses(s));
+        /*String s = "a(bc)de";
+        System.out.println(ReverseParenthese.reverseParentheses(s));*/
 
         /*int[] array = {1, 2, 3, 4, 5, 6};
         ArrayList<Integer> list = new ArrayList<>();
@@ -150,6 +147,9 @@ public class Main {
         }
         average /= 10;
         System.out.println(average);*/
+
+        String buttons = "";
+        PressingButton.pressingButtons(buttons);
     }
 
 

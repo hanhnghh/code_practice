@@ -135,7 +135,7 @@ public class Main {
         /*int[] a = {-1, 150, 190, 170, -1, -1, 160, 180};
         SortByHeight.sortByHeight(a);*/
 
-        String s = "a(bc)de";
+        String s = "(a(bc)d)e";
         System.out.println(ReverseParenthese.reverseParentheses(s));
 
         /*int[] array = {1, 2, 3, 4, 5, 6};

@@ -136,7 +136,7 @@ public class Main {
         SortByHeight.sortByHeight(a);*/
 
         String s = "a(bc)de";
-        ReverseParenthese.reverseParentheses(s);
+        System.out.println(ReverseParenthese.reverseParentheses(s));
 
         /*int[] array = {1, 2, 3, 4, 5, 6};
         ArrayList<Integer> list = new ArrayList<>();

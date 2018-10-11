@@ -4,49 +4,59 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ReverseParenthese {
+
+
+
     public static String reverseParentheses(String s) {
-        Map<Integer, String> map = new HashMap<>();
-        int level = 0;
         String[] list = s.split("");
         int n = list.length;
 
-        String[] resultArray = new String[n];
-        String result = "";
-        for(int i = 0, j = n - 1; i < n && j >= 0; i++, j--){
-            if(list[i].equals("(") && list[j].equals(")")){
-                level+= 1;
-                String temp = "";
-                for(int k = i; k <= j; k++){
-                    temp += list[k];
-                }
-
-                if(level % 2 == 0){
-                    result += reverseParentheses(temp);
+        StringBuilder result = new StringBuilder();
+        int i = 0, j = n - 1;
+        while(i < n || j >= 0){
+            if(list[i].equals("(") || list[j].equals(")")){
+                if(i < n && !list[i].equals("(")) {
+                    result.append(list[i]);
+                    i++;
+                } else if(j <= 0 && !list[j].equals(")")) {
+                    j--;
                 } else {
-                    String tempReverse = reverseArray(temp.split(""));
-                    result += reverseParentheses(tempReverse);
+                    StringBuilder temp = new StringBuilder();
+                    for (int k = i + 1; k < j; k++) {
+                        temp.append(list[k]);
+                    }
+                    String tempReversed = reverseArray(temp.toString().split(""));
+                    result.append(reverseParentheses(tempReversed));
+
+                    int pos = i;
+                    i = j;
+                    j = pos;
                 }
             } else {
-                resultArray[i] = list[i];
-                resultArray[j] = list[j];
+                if(!list[i].equals(")"))
+                    result.append(list[i]);
+                i++;
+                j--;
             }
         }
-        reverseArray(s.split(""));
-        return result;
+
+        return result.toString();
     }
 
     private static String reverseArray(String[] a){
-        String s = "";
+        StringBuilder s = new StringBuilder();
         int n = a.length;
-        for(int i = 0; i < a.length / 2 - 1; i++){
-            String temp = a[i];
-            a[i] = a[n - 1 - i];
-            a[n-1-i] = temp;
-        }
-        for(int i = 0; i < a.length; i++) {
-            s += a[i];
+
+        for(int i = n - 1; i >= 0; i--) {
+            if(!a[i].equals("(") && !a[i].equals(")")) {
+                s.append(a[i]);
+            } else if(a[i].equals(")")){
+                s.append("(");
+            } else if(a[i].equals("(")){
+                s.append(")");
+            }
         }
 
-        return s;
+        return s.toString();
     }
 }

@@ -9,9 +9,10 @@ import HeapStackQueue.NextLarger;
 import Sorting.BubbleSort;
 import Sorting.HigherVersion2;
 import Sorting.SortByString;
+import Tree.FindProfession;
+import Tree.FindProfession2;
 import Tree.RestoreBinaryTree;
 import Tree.HasPathWithGivenSum;
-import Tree.Tree;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -149,8 +150,9 @@ public class Main {
         average /= 10;
         System.out.println(average);*/
 
-        String buttons = "";
-        PressingButton.pressingButtons(buttons);
+        /*String buttons = "";
+        PressingButton.pressingButtons(buttons);*/
+
     }
 
 

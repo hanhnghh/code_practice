@@ -153,8 +153,10 @@ public class Main {
         /*String buttons = "";
         PressingButton.pressingButtons(buttons);*/
 
-        String s = "CBA";
-        StringPermutations.stringPermutations(s);
+        /*String s = "CBA";
+        StringPermutations.stringPermutations(s);*/
+
+        System.out.println(DifferentPlaylists.differentPlaylists(47, 5, 41));
 
     }
 

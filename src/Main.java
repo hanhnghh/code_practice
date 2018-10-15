@@ -149,8 +149,11 @@ public class Main {
         average /= 10;
         System.out.println(average);*/
 
-        String buttons = "";
-        PressingButton.pressingButtons(buttons);
+        /*String buttons = "";
+        PressingButton.pressingButtons(buttons);*/
+
+        String s = "CBA";
+        StringPermutations.stringPermutations(s);
     }
 
 

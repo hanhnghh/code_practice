@@ -154,8 +154,20 @@ public class Main {
         /*String buttons = "";
         PressingButton.pressingButtons(buttons);*/
 
-        int[] nums = new int[]{-1, 0, 1, 2, 6, 7, 9};
-        ComposeRanges2.composeRanges(nums);
+
+        /*int[] nums = new int[]{-1, 0, 1, 2, 6, 7, 9};
+        ComposeRanges2.composeRanges(nums);*/
+
+        /*String s = "CBA";
+        StringPermutations.stringPermutations(s);*/
+
+        /*System.out.println(DifferentPlaylists.differentPlaylists(47, 5, 41));*/
+
+        String[] picture = {"abc",
+                "ded"};
+
+        AddBorder.addBorder(picture);
+
     }
 
 

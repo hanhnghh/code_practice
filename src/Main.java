@@ -156,7 +156,12 @@ public class Main {
         /*String s = "CBA";
         StringPermutations.stringPermutations(s);*/
 
-        System.out.println(DifferentPlaylists.differentPlaylists(47, 5, 41));
+        /*System.out.println(DifferentPlaylists.differentPlaylists(47, 5, 41));*/
+
+        String[] picture = {"abc",
+                "ded"};
+
+        AddBorder.addBorder(picture);
 
     }
 

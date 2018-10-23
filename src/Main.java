@@ -1,4 +1,5 @@
 import Arcade.*;
+import Graphs.HasDeadLock;
 import Line.PhoneBill;
 import Line.Taks2;
 import Challenge.KBonacci;
@@ -158,10 +159,17 @@ public class Main {
 
         /*System.out.println(DifferentPlaylists.differentPlaylists(47, 5, 41));*/
 
-        String[] picture = {"abc",
+        /*String[] picture = {"abc",
                 "ded"};
 
-        AddBorder.addBorder(picture);
+        AddBorder.addBorder(picture);*/
+
+        int[][] connections = {{1},
+                {2},
+                {3,4},
+                {4},
+                {0}};
+        System.out.println(HasDeadLock.hasDeadlock(connections));
 
     }
 

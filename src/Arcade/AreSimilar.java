@@ -13,8 +13,7 @@ public class AreSimilar {
                     firstDiff = i;
                     firstNumA = a[i];
                     firstNumB = b[i];
-                }
-                else if(secondDiff == -1){
+                } else if(secondDiff == -1){
                     secondDiff = i;
                     if(b[i] != firstNumA || a[i] != firstNumB)
                         return false;

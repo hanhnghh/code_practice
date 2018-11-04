@@ -1,4 +1,5 @@
 import Arcade.*;
+import Graphs.HasDeadLock;
 import DynamicProgramming.ComposeRanges2;
 import Line.PhoneBill;
 import Line.RingBuffer;
@@ -213,6 +214,12 @@ public class Main {
         rb.enqueue(-6);
         rb.enqueue(-6);
         rb.displayQueue();
+        int[][] connections = {{1},
+                {2},
+                {3,4},
+                {4},
+                {0}};
+        System.out.println(HasDeadLock.hasDeadlock(connections));
 
     }
 

@@ -1,7 +1,9 @@
 import Arcade.*;
 import CommonTechniques.ActivitySelection;
 import DynamicProgramming.ComposeRanges2;
+import Graph.HasDeadLock;
 import Line.PhoneBill;
+import Line.RingBuffer;
 import Line.Taks2;
 import Challenge.KBonacci;
 import HeapStackQueue.CountClouds;
@@ -11,10 +13,7 @@ import HeapStackQueue.NextLarger;
 import Sorting.BubbleSort;
 import Sorting.HigherVersion2;
 import Sorting.SortByString;
-import Tree.FindProfession;
-import Tree.FindProfession2;
-import Tree.RestoreBinaryTree;
-import Tree.HasPathWithGivenSum;
+import Tree.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -169,7 +168,58 @@ public class Main {
 
         AddBorder.addBorder(picture);*/
 
+
         /*int[][] connections = {{1},
+
+        /*int[] parent = {0, 0, 0, 1};
+        ChangeRoot.changeRoot(parent, 1);*/
+
+        /*RingBuffer rb = new RingBuffer(5);
+
+        rb.enqueue(14);
+        rb.enqueue(22);
+        rb.enqueue(13);
+        rb.enqueue(-6);
+
+        rb.displayQueue();
+
+        rb.dequeue();
+        rb.dequeue();
+        rb.dequeue();
+
+        rb.displayQueue();
+
+        rb.enqueue(9);
+        rb.enqueue(20);
+        rb.enqueue(5);
+
+        rb.displayQueue();
+
+        rb.enqueue(2);
+
+        rb.displayQueue();
+
+        rb.enqueue(3);
+
+        rb.displayQueue();
+
+        rb.dequeue();
+        rb.dequeue();
+        rb.dequeue();
+        rb.dequeue();
+        rb.dequeue();
+        rb.dequeue();
+        rb.displayQueue();
+
+        rb.enqueue(3);
+        rb.enqueue(14);
+        rb.enqueue(22);
+        rb.enqueue(13);
+        rb.enqueue(-6);
+        rb.enqueue(-6);
+        rb.displayQueue();
+        int[][] connections = {{1},
+
                 {2},
                 {3,4},
                 {4},

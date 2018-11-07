@@ -1,5 +1,5 @@
 import Arcade.*;
-import Graphs.HasDeadLock;
+import CommonTechniques.ActivitySelection;
 import DynamicProgramming.ComposeRanges2;
 import Line.PhoneBill;
 import Line.Taks2;
@@ -169,12 +169,26 @@ public class Main {
 
         AddBorder.addBorder(picture);*/
 
-        int[][] connections = {{1},
+        /*int[][] connections = {{1},
                 {2},
                 {3,4},
                 {4},
                 {0}};
-        System.out.println(HasDeadLock.hasDeadlock(connections));
+        System.out.println(HasDeadLock.hasDeadlock(connections));*/
+
+        /*int[] start = {1, 3, 0, 5, 8, 5};
+        int[] finish = {2, 4, 6, 7, 9, 9};
+
+        ActivitySelection.selectAcitivity(start, finish);*/
+
+        /*int[] inputArray = {-1000, 0, -2, 0};
+        System.out.println(ArrayChange.arrayChange(inputArray));*/
+
+        /*String inputString = "abbcabb";
+        System.out.println(PalindromeRearranging.palindromeRearranging(inputString));*/
+
+        String inputString = ".316.254.1";
+        System.out.println(IsIPv4Address.isIPv4Address(inputString));
 
     }
 
